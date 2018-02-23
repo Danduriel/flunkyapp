@@ -1,6 +1,7 @@
 package app.flunky;
 
-import java.util.Vector;
+import java.util.ArrayList;
+
 
 public class Tournament {
 	protected String name; 
@@ -18,10 +19,15 @@ public class Tournament {
 	protected Player bestThrow;
 	protected Player mvp; // Best quota of Hit / Throws
 	
-	protected Vector<Team> teams;
-	protected Vector<Game> games;
+	protected ArrayList teams;
+	protected ArrayList games;
+	//numbers.add(new PhoneNumber("Home", "206-555-1234"));
+	//teams.add(new Throw("Martin", true)
 	
-	
+	public Tournament(String name, String date) {
+		this.name = name;
+		this.date = date;
+	}
 	
 	
 	protected void setMVP() {
