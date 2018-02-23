@@ -9,9 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 public class Orchestrator extends ApplicationAdapter {
 	
 	
-	
-	//Test
-	//TEst 2
+	public int GID; 
 	
 	
 	SpriteBatch batch;
