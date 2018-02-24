@@ -16,13 +16,12 @@ public class Tournament {
 	
 	protected int countTeams;
 	protected Team winner;
-	protected Player bestThrow;
+	protected Throw bestThrow;
 	protected Player mvp; // Best quota of Hit / Throws
 	
 	protected ArrayList<Team> teams;
 	protected ArrayList<Game> games;
-	//numbers.add(new PhoneNumber("Home", "206-555-1234"));
-	//teams.add(new Throw("Martin", true)
+
 	
 	public Tournament(String name, String date, String format) {
 		this.name = name;
@@ -30,9 +29,11 @@ public class Tournament {
 		this.format = format;
 	}
 	
+	//Omitting more Constructors out of lazyness
 	
-	protected void setMVP() {
-		//this.mvp = ;
+	
+	protected void setMVP(Player player) {
+		this.mvp = player;
 	}
 	
 	protected void addGame(int gid, Team teamone, Team teamtwo, Team winner) {
@@ -42,8 +43,9 @@ public class Tournament {
 		games.add(new Game(gid, teamone, teamtwo));
 	}
 	
-	protected void addTeam() {
-		
+	protected void addTeam(Team team) {
+		teams.add(team);
+		countTeams++;
 	}
 
 	
