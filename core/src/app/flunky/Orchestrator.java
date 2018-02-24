@@ -17,7 +17,7 @@ public class Orchestrator extends ApplicationAdapter {
 	
 	
 	public void testdata() {
-		testtournament = new Tournament("Birkenstock 2018", "Sepember 2018");
+		testtournament = new Tournament("Birkenstock 2018", "Sepember 2018","Double Elim");
 		
 	}
 	
