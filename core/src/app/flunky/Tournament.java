@@ -35,8 +35,11 @@ public class Tournament {
 		//this.mvp = ;
 	}
 	
-	protected void addGame() {
-		
+	protected void addGame(int gid, Team teamone, Team teamtwo, Team winner) {
+		games.add(new Game(gid, teamone, teamtwo,winner));
+	}
+	protected void addGame(int gid, Team teamone, Team teamtwo) {
+		games.add(new Game(gid, teamone, teamtwo));
 	}
 	
 	protected void addTeam() {
