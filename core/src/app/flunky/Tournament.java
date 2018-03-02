@@ -29,12 +29,18 @@ public class Tournament {
 		this.format = format;
 	}
 	
+	
+	protected void countTeams() {
+		countTeams = teams.size();
+	}
+	
 	//Omitting more Constructors out of lazyness
 	
 	
 	protected void setMVP(Player player) {
 		this.mvp = player;
 	}
+	
 	
 	protected void addGame(int gid, Team teamone, Team teamtwo, Team winner) {
 		games.add(new Game(gid, teamone, teamtwo,winner));
