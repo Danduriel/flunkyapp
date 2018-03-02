@@ -8,17 +8,17 @@ public class Team {
 	
 
 	protected int playerCount; 
-	protected ArrayList<Player> players;
+	protected ArrayList<Player> players= new ArrayList<Player>();
 	//protected Player playerOne;
 	//protected Player playerTwo;
 	
 	protected String logoPath;
-	
-	protected ArrayList<String> formerNames;
+
+	protected ArrayList<String> formerNames = new ArrayList<String>();
 	protected String description;
 
-	protected ArrayList<Game> games;
-	protected ArrayList<Tournament> tourneyWins;
+	protected ArrayList<Game> games = new ArrayList<Game>();
+	protected ArrayList<Tournament> tourneyWins = new ArrayList<Tournament>();
 	protected int wins;
 	
 	

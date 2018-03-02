@@ -9,7 +9,7 @@ public class Game {
 	protected Team teamOne;
 	protected Team teamTwo;
 	
-	protected ArrayList<Throw> throwes;
+	protected ArrayList<Throw> throwes = new ArrayList<Throw>();
 	//throwes.add(new Throw(teamone.getPlayerOne, true);
 	protected int throwCount;
 	protected int hitCount;

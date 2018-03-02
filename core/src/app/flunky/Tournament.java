@@ -19,8 +19,8 @@ public class Tournament {
 	protected Throw bestThrow;
 	protected Player mvp; // Best quota of Hit / Throws
 	
-	protected ArrayList<Team> teams;
-	protected ArrayList<Game> games;
+	protected ArrayList<Team> teams= new ArrayList<Team>();
+	protected ArrayList<Game> games= new ArrayList<Game>();
 
 	
 	public Tournament(String name, String date, String format) {
