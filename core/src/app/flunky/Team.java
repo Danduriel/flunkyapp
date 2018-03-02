@@ -49,8 +49,9 @@ public class Team {
 		this.players.add(two);
 	}
 	
-	protected Team(String name) {
+	protected Team(String name, int playercount) {
 		this.name = name;
+		this.playerCount = playercount;
 	}
 	
 	//Just adding add methods. 
