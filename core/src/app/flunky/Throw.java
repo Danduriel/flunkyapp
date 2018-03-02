@@ -18,4 +18,39 @@ public class Throw {
 		this.desc = desc;
 	}
 	
+	public Player getPitcher() {
+		return pitcher;
+	}
+
+	public void setPitcher(Player pitcher) {
+		this.pitcher = pitcher;
+	}
+
+	public boolean isHit() {
+		return hit;
+	}
+
+	public void setHit(boolean hit) {
+		this.hit = hit;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public String getPath() {
+		return path;
+	}
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
+	
+	
+	
 }

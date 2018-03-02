@@ -54,6 +54,74 @@ public class Team {
 		this.playerCount = playercount;
 	}
 	
+	
+	
+	public int getPlayerCount() {
+		return playerCount;
+	}
+
+	public void setPlayerCount(int playerCount) {
+		this.playerCount = playerCount;
+	}
+
+	public ArrayList<Player> getPlayers() {
+		return players;
+	}
+
+	public void setPlayers(ArrayList<Player> players) {
+		this.players = players;
+	}
+
+	public String getLogoPath() {
+		return logoPath;
+	}
+
+	public void setLogoPath(String logoPath) {
+		this.logoPath = logoPath;
+	}
+
+	public ArrayList<String> getFormerNames() {
+		return formerNames;
+	}
+
+	public void setFormerNames(ArrayList<String> formerNames) {
+		this.formerNames = formerNames;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public ArrayList<Game> getGames() {
+		return games;
+	}
+
+	public void setGames(ArrayList<Game> games) {
+		this.games = games;
+	}
+
+	public ArrayList<Tournament> getTourneyWins() {
+		return tourneyWins;
+	}
+
+	public void setTourneyWins(ArrayList<Tournament> tourneyWins) {
+		this.tourneyWins = tourneyWins;
+	}
+
+	public int getWins() {
+		return wins;
+	}
+
+	public void setWins(int wins) {
+		this.wins = wins;
+	}
+
+
+	
 	//Just adding add methods. 
 	//Removal will be done on demand. 
 	
