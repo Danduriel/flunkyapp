@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class Team {
 	
 	protected String name; 
+	
+
 	protected int playerCount; 
 	protected ArrayList<Player> players;
 	//protected Player playerOne;
@@ -54,6 +56,14 @@ public class Team {
 	//Just adding add methods. 
 	//Removal will be done on demand. 
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 	protected void addPlayer(Player player) {
 		this.players.add(player);
 	}
@@ -66,4 +76,6 @@ public class Team {
 		this.tourneyWins.add(win);
 		wins++;
 	}
+	
+	
 }

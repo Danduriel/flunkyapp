@@ -13,6 +13,7 @@ public class Game {
 	//throwes.add(new Throw(teamone.getPlayerOne, true);
 	protected int throwCount;
 	protected int hitCount;
+	protected String desc;
 	
 	protected Team winner;
 	
@@ -28,6 +29,8 @@ public class Game {
 		this.teamOne = teamone;
 		this.teamTwo = teamtwo;
 		this.winner = winner;
+		this.desc = teamOne.getName() + "vs. "+ teamTwo.getName();
+				
 	}
 	protected void addThrow(Throw wurf) {
 		throwes.add(wurf);
