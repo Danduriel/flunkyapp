@@ -44,22 +44,22 @@ public class Orchestrator extends ApplicationAdapter {
 		System.out.println("Derp4");
 		
 		//Player
-		players.add(new Player("Alex", teams.get(0)));
-		players.add(new Player("Sven", teams.get(0)));
-		players.add(new Player("Till", teams.get(1)));
-		players.add(new Player("Felix", teams.get(1)));
-		players.add(new Player("Lara", teams.get(2)));
-		players.add(new Player("Philo", teams.get(2)));
-		players.add(new Player("Robin", teams.get(3)));
-		players.add(new Player("Merlin", teams.get(3)));
-		players.add(new Player("Dustin", teams.get(4)));
-		players.add(new Player("Lukas", teams.get(4)));
-		players.add(new Player("BonnDude1", teams.get(5)));
-		players.add(new Player("BonnDude2", teams.get(5)));
-		players.add(new Player("Jana", teams.get(6)));
-		players.add(new Player("Morio2", teams.get(6)));
-		players.add(new Player("Kiddie1", teams.get(7)));
-		players.add(new Player("Kiddie2", teams.get(7)));
+		players.add(new Player("Alex", "Infosaurier"));
+		players.add(new Player("Sven", "Infosaurier"));
+		players.add(new Player("Till", "Hangover 96"));
+		players.add(new Player("Felix", "Hangover 96"));
+		players.add(new Player("Lara", "Pürietten"));
+		players.add(new Player("Philo", "Pürietten"));
+		players.add(new Player("Robin", "Redbeards"));
+		players.add(new Player("Merlin","Redbeards"));
+		players.add(new Player("Dustin", "BHood Jillaz"));
+		players.add(new Player("Lukas", "BHood Jillaz"));
+		players.add(new Player("BonnDude1", "Robin zur Turnierleitung bitte"));
+		players.add(new Player("BonnDude2","Robin zur Turnierleitung bitte"));
+		players.add(new Player("Jana", "Morio Muskat"));
+		players.add(new Player("Morio2", "Morio Muskat"));
+		players.add(new Player("Kiddie1", "To beer or not to beer"));
+		players.add(new Player("Kiddie2", "To beer or not to beer"));
 		
 		System.out.println("Derp5");
 

@@ -6,17 +6,17 @@ public class Player {
 	protected String picturePath;
 	
 	protected String[] formerNames;
-	protected Team team;
+	protected String team;
 	
 	
 	
-	public Player(String name, String path, Team team) {
+	public Player(String name, String path, String team) {
 		this.name = name;
 		this.picturePath = path;
 		this.team = team;
 	}
 	
-	public Player(String name, Team team) {
+	public Player(String name, String team) {
 		this.name = name;
 		this.team = team;
 	}
@@ -43,11 +43,11 @@ public class Player {
 		this.picturePath = picturePath;
 	}
 
-	public Team getTeam() {
+	public String getTeam() {
 		return team;
 	}
 
-	public void setTeam(Team team) {
+	public void setTeam(String team) {
 		this.team = team;
 	}
 
