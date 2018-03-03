@@ -136,6 +136,10 @@ public class Game {
 
 	public void setDesc(String desc) {
 		this.desc = desc;
+		this.desc = teamOne.getName() + "vs. "+ teamTwo.getName();
+	}
+	public void setDesc() {
+		this.desc = teamOne.getName() + "vs. "+ teamTwo.getName();
 	}
 
 	public Team getWinner() {
