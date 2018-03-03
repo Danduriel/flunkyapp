@@ -98,7 +98,7 @@ public class Orchestrator extends ApplicationAdapter {
 		
 		System.out.println("Derp8");
 		
-		
+		/*
 		Tournament testtourney = new Tournament("WM","01.01.1970","Double Elimination");
 		Player testplayer = new Player("Alex");
 		Team testteam = new Team("Derps",2);
@@ -106,16 +106,19 @@ public class Orchestrator extends ApplicationAdapter {
 		//testplayer.setTeam(testteam);
 		 /// Zirkelbezug killt Json
 		testtourney.addTeam(testteam);		
-
+		
 		Json json = new Json();
 		System.out.println(json.prettyPrint(testtourney));
-		
+		 */
 		
 		//Json json2 = new Json();
 		//System.out.println(json2.prettyPrint(players.get(0)));
 		//Json json3 = new Json();
 		//System.out.println(json3.prettyPrint(teams.get(0)));
 		
+		
+		Json json = new Json();
+		System.out.println(json.prettyPrint(tournaments.get(0)));
 	}
 	
 	

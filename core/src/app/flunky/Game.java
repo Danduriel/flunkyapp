@@ -13,6 +13,8 @@ public class Game {
 	//throwes.add(new Throw(teamone.getPlayerOne, true);
 	protected int throwCount;
 	protected int hitCount;
+	protected int hitCountTeamOne;
+	protected int hitCountTeamTwo;
 	protected String desc;
 	
 	protected Team winner;
@@ -33,9 +35,11 @@ public class Game {
 	}
 	protected void addThrow(Throw wurf) {
 		throwes.add(wurf);
+		throwCount++;
 	}
 	protected void addThrow(Player pitcher, boolean hit) {
 		throwes.add(new Throw(pitcher, hit));
+		throwCount++;
 	}
 	
 	
@@ -78,6 +82,9 @@ public class Game {
 	public void setThrowCount(int throwCount) {
 		this.throwCount = throwCount;
 	}
+	public void setThrowCount() {
+		this.throwCount = throwes.size();
+	}
 
 	public int getHitCount() {
 		return hitCount;
@@ -86,7 +93,43 @@ public class Game {
 	public void setHitCount(int hitCount) {
 		this.hitCount = hitCount;
 	}
-
+	//Iterate through all Throws and count hits. 
+	public void setHitCount() {
+		hitCount = 0;
+		for (int i = 0; i < throwes.size(); i++) {
+			if(throwes.get(i).getHit()) {
+				hitCount++;
+			}
+		}
+	}
+	
+	
+	public int getHitCountTeamOne() {
+		return hitCountTeamOne;
+	}
+/*// Zirkelbezug wenn der pitcher ein team und nicht nur nen string fürs team hat. 
+	public void setHitCountTeamOne() {
+		hitCountTeamOne = 0;
+		for (int i = 0; i < throwes.size(); i++) {
+			if(throwes.get(i).getHit() && throwes.get(i).getPitcher = "derp") {
+				hitCount++;
+			}
+		}
+	}
+*/ 
+	public int getHitCountTeamTwo() {
+		return hitCountTeamTwo;
+	}
+/* Zirkelbezug wenn der pitcher ein team und nicht nur nen string fürs team hat. 
+	public void setHitCountTeamTwo() {
+		hitCountTeamTwo = 0;
+		for (int i = 0; i < throwes.size(); i++) {
+			if(throwes.get(i).getHit()) {
+				hitCount++;
+			}
+		}
+	}
+*/
 	public String getDesc() {
 		return desc;
 	}

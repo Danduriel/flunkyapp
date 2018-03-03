@@ -26,7 +26,7 @@ public class Throw {
 		this.pitcher = pitcher;
 	}
 
-	public boolean isHit() {
+	public boolean getHit() {
 		return hit;
 	}
 

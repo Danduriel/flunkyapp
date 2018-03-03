@@ -34,7 +34,6 @@ public class Tournament {
 		countTeams = teams.size();
 	}
 	
-	//Omitting more Constructors out of lazyness
 	
 	
 	protected void setMVP(Player player) {
